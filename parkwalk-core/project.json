@@ -1,0 +1,19 @@
+{
+  "name": "parkwalk-core",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "parkwalk-core/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/parkwalk-core",
+        "main": "parkwalk-core/src/index.ts",
+        "tsConfig": "parkwalk-core/tsconfig.lib.json",
+        "assets": ["parkwalk-core/*.md"]
+      }
+    }
+  }
+}
